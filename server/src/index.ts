@@ -15,7 +15,7 @@ app.post('/decks', async (req: Request, res: Response) => {
 })
 
 mongoose.connect(
-    'mongodb+srv://minagholami37:minisia@flashcard.bmgqpba.mongodb.net/?retryWrites=true&w=majority'
+    'mongodb+srv://<username><pass>@flashcard.bmgqpba.mongodb.net/?retryWrites=true&w=majority'
 ).then(() => {
     console.log(`Listening to ${PORT}`);
     app.listen(PORT);
